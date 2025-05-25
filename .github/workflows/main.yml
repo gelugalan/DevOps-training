@@ -1,9 +1,11 @@
 name: CI Test
+
 on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      -uses: actions/checkout@v3
-      -name: Hello world
-      -run: echo "Hello world" 
+      - uses: actions/checkout@v3
+      - name: Hello world
+        run: echo "Hello world" 
